@@ -19,16 +19,23 @@ git submodule add https://github.com/anishathalye/dotbot
 
 ```
 git clone https://github.com/seanorama/dotfiles ~/Projects/dotfiles
+cd ~/Projects/dotfiles
+git submodule update --init --recursive
 cd ~/Projects/dotfiles/seanorama/dotfiles
 git submodule update --init --recursive
 ./install
 ```
 
-### Borrow from other dotfiles repositories
+### Upgrade submodules
+
+```
+git submodule update --init --remote
+```
+
+### Included as submodules:
 
 ```
 cd ~/Projects/dotfiles/
 git submodule add https://github.com/mathiasbynens/dotfiles mathiasbynens/dotfiles
 git submodule add https://github.com/anishathalye/dotfiles anishathalye/dotfiles
-git submodule update --init --recursive
 ```
