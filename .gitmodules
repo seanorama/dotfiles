@@ -7,3 +7,6 @@
 [submodule "anishathalye/dotfiles"]
 	path = anishathalye/dotfiles
 	url = https://github.com/anishathalye/dotfiles
+[submodule "seanorama/dotfiles/resources/solarized"]
+	path = seanorama/dotfiles/resources/solarized
+	url = https://github.com/altercation/solarized

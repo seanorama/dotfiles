@@ -2,6 +2,7 @@
 
 - link:
     ~/.dotfiles: ''
+    ~/.rbenv: .rbenv
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
     ~/.bash_profile: .bash_profile
@@ -9,7 +10,6 @@
     ~/.bashrc: .bashrc
     ~/.profile: .profile
     ~/.screenrc: .screenrc
-    ~/.exports: extras/exports.sh
     ~/.gvimrc: .gvimrc
 #    ~/.tmux.conf: tmux.conf
 #    ~/.vim: vim/
@@ -17,8 +17,14 @@
 
 - shell:
   -
+    - source ~/.bash_profile
+    - get into new bash shell
+  -
     - mkdir -p ~/Projects/archive ~/Projects/current
     - Creating Project directories directories
   -
     - git submodule update --init --recursive
     - Installing/updating submodules
+  -
+    - _update_hosts
+    - replace /etc/hosts with http://someonewhocares.org/hosts/zero/hosts
