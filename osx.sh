@@ -37,7 +37,8 @@ chsh -s /usr/local/bin/bash
 #sudo bash -c "echo /usr/local/bin/zsh >> /etc/shells"
 #chsh -s /usr/local/bin/zsh
 
-brew install github
+brew install gfortran
+brew cask install github
 brew install wget --with-iri
 brew install curl
 brew install python python3

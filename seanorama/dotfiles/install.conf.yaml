@@ -2,7 +2,6 @@
 
 - link:
     ~/.dotfiles: ''
-    ~/.rbenv: .rbenv
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
     ~/.bash_profile: .bash_profile
