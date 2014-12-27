@@ -1,0 +1,3 @@
+[submodule "seanorama/dotfiles/dotbot"]
+	path = seanorama/dotfiles/dotbot
+	url = https://github.com/anishathalye/dotbot

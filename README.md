@@ -8,10 +8,12 @@ dotfiles
 
 ### Installation
 
+```
 git clone https://github.com/seanorama/dotfiles ~/Projects/dotfiles
-cd ~/Projects/dotfiles/seanorama/
 ln -s ~/Projects/dotfiles/seanorama/dotfiles ~/
+cd ~/dotfiles
 git submodule add https://github.com/anishathalye/dotbot
+```
 
 
 #### Install script
