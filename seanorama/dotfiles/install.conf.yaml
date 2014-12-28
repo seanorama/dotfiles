@@ -16,14 +16,8 @@
 
 - shell:
   -
-    - source ~/.bash_profile
-    - get into new bash shell
-  -
     - mkdir -p ~/Projects/archive ~/Projects/current
     - Creating Project directories directories
   -
     - git submodule update --init --recursive
     - Installing/updating submodules
-  -
-    - _update_hosts
-    - replace /etc/hosts with http://someonewhocares.org/hosts/zero/hosts

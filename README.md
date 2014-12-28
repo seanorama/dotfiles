@@ -57,5 +57,6 @@ git submodule add https://github.com/anishathalye/dotfiles anishathalye/dotfiles
 1. Other:
   * Install Webex
   * Install Webex Player
+  * ```_update_hosts```
 *
 * 

@@ -24,6 +24,11 @@ brew tap caskroom/versions
 # Upgrade any already-installed formulae.
 brew upgrade
 
+# Install Bash
+brew install bash bash-completion
+sudo bash -c "echo /usr/local/bin/bash >> /etc/shells"
+chsh -s /usr/local/bin/bash
+
 # For X11
 brew cask install xquartz
 brew tap homebrew/x11
@@ -40,11 +45,6 @@ brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
 brew install gnu-sed --with-default-names
 
-# Install Bash 4.
-brew install bash
-brew install bash-completion
-sudo bash -c "echo /usr/local/bin/bash >> /etc/shells"
-chsh -s /usr/local/bin/bash
 
 # Install zsh
 #brew install zsh zsh-completions zsh-lovers zsh-syntax-highlighting
@@ -147,12 +147,13 @@ brew cask install  controlplane
 
 # media
 brew install imagemagick --with-webp
-brew install gimp
+brew cask install gimp
 brew cask install inkscape
 brew install ffmpeg
 brew cask install  vlc
 brew cask install  mplayerx
 brew install  cmus # command-line music/mp3 player
+brew cask install mediainfo
 
 # dev
 brew cask install  vagrant
