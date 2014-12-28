@@ -9,10 +9,10 @@
     ~/.bashrc: .bashrc
     ~/.profile: .profile
     ~/.screenrc: .screenrc
-    ~/.gvimrc: .gvimrc
 #    ~/.tmux.conf: tmux.conf
-#    ~/.vim: vim/
-#    ~/.vimrc: vimrc
+    ~/.vim: .vim/
+    ~/.vimrc: .vimrc
+    ~/.gvimrc: .gvimrc
 
 - shell:
   -
