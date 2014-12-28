@@ -8,17 +8,25 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until the script has finished.
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+# Make sure we’re using the latest Homebrew.
+brew update
+
 # TODO: explain this
 brew tap homebrew/versions
 brew tap homebrew/science
 brew tap homebrew/python
+brew tap homebrew/completions
 
-# Make sure we’re using the latest Homebrew.
-brew update
+# install caskroom
+brew install caskroom/cask/brew-cask
+brew tap caskroom/versions
 
 # Upgrade any already-installed formulae.
 brew upgrade
 
+# For X11
+brew cask install xquartz
+brew tap homebrew/x11
 
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
@@ -48,8 +56,6 @@ brew cask install github
 brew install wget --with-iri
 brew install curl
 brew install python python3
-#brew install vim --override-system-vi
-brew install macvim --env-std
 brew install macvim --env-std --custom-icons --override-system-vim --with-lua --with-luajit --with-python --with-ruby --with-perl --with-cscope --with-lua --with-tcl --with-python3
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/screen
@@ -82,7 +88,6 @@ brew install xz
 # Install other useful binaries.
 brew install ack
 brew install git
-brew install xquartz
 
 brew install lynx
 brew install p7zip
@@ -100,9 +105,6 @@ brew install node
 
 
 ###
-# Install OS X applications with Homebrew Caskroom
-brew install caskroom/cask/brew-cask
-brew tap caskroom/versions
 
 # Paid apps
 # remember to manually add your licenses
@@ -146,7 +148,7 @@ brew cask install  controlplane
 # media
 brew install imagemagick --with-webp
 brew install gimp
-brew install inkscape
+brew cask install inkscape
 brew install ffmpeg
 brew cask install  vlc
 brew cask install  mplayerx
@@ -187,7 +189,7 @@ brew cask install  box-sync
 
 # system
 brew cask install osxfuse
-brew install fuse
+brew install encfs
 brew cask install  grandperspective
 
 # extras

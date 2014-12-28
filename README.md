@@ -50,7 +50,7 @@ git submodule add https://github.com/anishathalye/dotfiles anishathalye/dotfiles
     *
 1. iTerm
   * add & choose the color profiles from: ~/.dotfiles/resources/solarized/iterm2-colors-solarized/
-1. Remap caps lock using seil & karabiner:
+1. Remap capslock to ctrl & escape using seil & karabiner:
     * http://www.economyofeffort.com/2014/08/11/beyond-ctrl-remap-make-that-caps-lock-key-useful/
 1. SSH configuration (if not already present)
     * ssh-keygen -t rsa -C “seanorama@gmail.com” ; subl ~/.ssh/id_rsa.pub
