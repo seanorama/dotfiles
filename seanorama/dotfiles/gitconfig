@@ -1,9 +1,6 @@
 [user]
 	name = Sean Roberts
 	email = seanorama@gmail.com
-[github]
-	user = seanorama
-	token = 49ae5ed64cbc4a2ee7d0d1688581c029207a08b0
 [core]
 	editor = /usr/local/bin/vim
 	excludesfile = ~/.gitignore_global
